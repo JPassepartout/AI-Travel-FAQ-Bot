@@ -2,33 +2,33 @@
 
 This is a simple AI-powered FAQ chatbot that answers travel-related questions using LangChain, VertexAI embeddings, and FAISS for semantic search.
 
-## 🔧 Features
+##  Features
 
 - Loads questions and answers from a PDF
 - Embeds Q&A data with VertexAI embeddings
 - Stores vectors in a FAISS index
 - Accepts user queries and returns top 3 most relevant Q&A pairs
 
-## 📦 Requirements
+##  Requirements
 
 Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
 ```
-## 🔐 Environment Variables
+##  Environment Variables
 Create a .env file in the root directory:
 ```bash
 project = your-google-cloud-project-id
 location = your-gcp-region
 ```
-## 💡 Notes
+##  Notes
 Embeddings are generated using text-embedding-004 model from Vertex AI.
 Ensure your GCP account has VertexAI access and is authenticated:
 ```bash
 gcloud auth application-default login
 ```
-## 🚀 Usage
+##  Usage
 ```bash
 python main.py
 ```
